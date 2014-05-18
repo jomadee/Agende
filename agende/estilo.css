@@ -1,0 +1,78 @@
+/**
+*
+* Agende | lliure 5.x
+*
+* @Versão 3.0
+* @Desenvolvedor Jeison Frasson <jomadee@lliure.com.br>
+* @Entre em contato com o desenvolvedor <jomadee@lliure.com.br> http://www.lliure.com.br
+* @Licença http://opensource.org/licenses/gpl-license.php GNU Public License
+*
+*/
+
+table.table tr:hover td{
+	background: #e7e7e7;
+	}
+	
+/***************/
+.menuBlog{
+	position: absolute;
+	left: 0;
+	top: 0;
+	}
+	
+.menuBlog ul {
+	width: 190px;
+	border-bottom: 1px solid #777;
+	}
+	
+.menuBlog ul li {
+	clear: both;
+	}
+	
+	.menuBlog ul li.top {
+			padding: 5px 0 5px 8px;
+			margin-bottom: 10px;
+			font-weight: bold;
+			background: #e7e7e7;
+			border-bottom: 1px solid #777;
+		}
+			
+	.menuBlog ul li a{
+		display: block;
+		margin: 0 0 5px 0;
+		padding: 6px 0 5px 8px;
+		}
+		
+		.menuBlog ul li a:hover{
+			background: #e7e7e7;
+			}
+		
+		.menuBlog ul li a img{
+			float: left;
+			margin: -2px 5px 0 0;
+			}
+			
+.contBlog{
+	padding: 0 0 0 220px;
+	margin-top: 10px;
+	position: relative;
+	font-size: 12px;
+	}
+	
+.contBlog .limitBlog{
+	width: 750px;
+	}
+	
+.paginacao{
+	margin-top: 10px;
+	}
+	
+	.paginacao a{
+		padding: 0 2px;
+		}
+	
+	.paginacao a.atual{
+		font-weight: bold;
+		font-size: 14px;
+		}
+		

@@ -3,7 +3,7 @@
 *
 * Agende | lliure 5.x
 *
-* @Versão 4.0
+* @Versão 4.1
 * @Desenvolvedor Jeison Frasson <jomadee@lliure.com.br>
 * @Entre em contato com o desenvolvedor <jomadee@lliure.com.br> http://www.lliure.com.br
 * @Licença http://opensource.org/licenses/gpl-license.php GNU Public License
@@ -37,10 +37,8 @@
 		$dados = mysql_fetch_assoc($consulta);
 		
 		
-		?>
-		
-		<div class="limitBlog">
-			
+		?>		
+		<div class="limitBlog">			
 			<form method="post" class="form" action="<?php echo  $_ll['app']['onserver'].'&ac=organ&id='.$_GET['id']?>"  enctype="multipart/form-data">
 				<fieldset style="width: 500px;">				
 					<div style="width: 338px;">

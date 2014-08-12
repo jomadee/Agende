@@ -3,7 +3,7 @@
 *
 * Agende | lliure 5.x
 *
-* @Versão 4.1
+* @Versão 4.2
 * @Desenvolvedor Jeison Frasson <jomadee@lliure.com.br>
 * @Entre em contato com o desenvolvedor <jomadee@lliure.com.br> http://www.lliure.com.br
 * @Licença http://opensource.org/licenses/gpl-license.php GNU Public License
@@ -67,7 +67,7 @@
 				
 				<td class="ico"><a href="<?php echo $llHome?>&amp;p=blog&amp;id=<?php echo $dados['id'].(isset($_GET['pagina'])?'&amp;pagina='.$_GET['pagina']:'')?>"><img src="<?php echo $_ll['tema']['icones'].'doc_edit.png'; ?>" alt="editar"/></a></td>
 				
-				<td class="ico"><a href="<?php echo $llPasta.'step.php?programacao-del='.$dados['id'].(isset($_GET['pagina'])?'&amp;pagina='.$_GET['pagina']:'')?>" title="excluir" class="excluir"><img src="<?php echo $_ll['tema']['icones'].'trash.png'; ?>" alt="excluir"/></a></td>
+				<td class="ico"><a href="<?php echo $_ll['app']['onserver'].'&ac=programacao-del&id='.$dados['id'].(isset($_GET['pagina'])?'&amp;pagina='.$_GET['pagina']:'')?>" title="excluir" class="excluir"><img src="<?php echo $_ll['tema']['icones'].'trash.png'; ?>" alt="excluir"/></a></td>
 			</tr>
 			<?php		
 			$i++;

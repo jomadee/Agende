@@ -3,7 +3,7 @@
 *
 * Agende | lliure 5.x
 *
-* @Versão 4.2
+* @Versão 4.3
 * @Desenvolvedor Jeison Frasson <jomadee@lliure.com.br>
 * @Entre em contato com o desenvolvedor <jomadee@lliure.com.br> http://www.lliure.com.br
 * @Licença http://opensource.org/licenses/gpl-license.php GNU Public License
@@ -52,8 +52,7 @@
 		<table class="table">
 			<tr>
 				<th width="85px">Data</th>		
-				<th>Nome</th>		
-				<th style="width: 20px;"></th>		
+				<th>Nome</th>
 				<th style="width: 20px;"></th>		
 			</tr>
 		<?php
@@ -64,9 +63,7 @@
 				<td><?php echo !empty($dados['data']) ? date('d/m H:i',$dados['data']) : 'sem data'?></td>
 				
 				<td><a href="<?php echo $llHome.'&amp;id='.$dados['id'].(isset($_GET['pagina'])?'&amp;pagina='.$_GET['pagina']:''); ?>"><?php echo $dados['titulo'];?><a/></td>
-				
-				<td class="ico"><a href="<?php echo $llHome?>&amp;p=blog&amp;id=<?php echo $dados['id'].(isset($_GET['pagina'])?'&amp;pagina='.$_GET['pagina']:'')?>"><img src="<?php echo $_ll['tema']['icones'].'doc_edit.png'; ?>" alt="editar"/></a></td>
-				
+								
 				<td class="ico"><a href="<?php echo $_ll['app']['onserver'].'&ac=programacao-del&id='.$dados['id'].(isset($_GET['pagina'])?'&amp;pagina='.$_GET['pagina']:'')?>" title="excluir" class="excluir"><img src="<?php echo $_ll['tema']['icones'].'trash.png'; ?>" alt="excluir"/></a></td>
 			</tr>
 			<?php		
@@ -80,7 +77,7 @@
 			$anterior = $pc -1;
 			$proximo = $pc +1;
 			
-			$url = $llHome.'&amp;p=blog';
+			$url = $llHome;
 			
 			if($tp > 1){
 				$tm = 3;
@@ -153,17 +150,6 @@
 						<textarea name="descricao" class="texto"><?php echo (isset($dados['descricao'])?stripslashes($dados['descricao']):'')?></textarea>
 					</div>
 					
-					<div>
-						<?php
-						$file = new fileup; 
-						$file->titulo = 'Imagem:';
-						$file->rotulo = 'Selecionar imagem';
-						$file->registro = $dados['img'];
-						$file->campo = 'img';
-						$file->extencao = 'png jpg';
-						$file->form();
-						?>
-					</div>
 				</fieldset>
 				
 				<div class="botoes">

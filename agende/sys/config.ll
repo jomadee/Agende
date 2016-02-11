@@ -15,5 +15,5 @@
 
 <configuracoes>
 	<nome>Agende</nome>
-	<seguranca>public</seguranca>
+	<seguranca>admin</seguranca>
 </configuracoes>
